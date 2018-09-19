@@ -20,7 +20,7 @@ const TextLink = styled(Link)`
 `
 export default () => (
   <NavBar>
-    <Link style={{ marginLeft: '-5px' }}>
+    <Link style={{ marginLeft: '-5px' }} to="/">
       <img src={logo} alt="" />
     </Link>
     <TextLink>About Us</TextLink>

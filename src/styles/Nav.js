@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../../images/UXSocietyLogo_full.png'
+import logo from '../images/UXSocietyLogo_full.png'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
@@ -24,7 +24,7 @@ export default () => (
       <img src={logo} alt="" />
     </Link>
     <TextLink>About Us</TextLink>
-    <TextLink>Community</TextLink>
+    <TextLink to="/community/">Community</TextLink>
     <TextLink>Work</TextLink>
     <TextLink margin="no">Contact Us</TextLink>
   </NavBar>

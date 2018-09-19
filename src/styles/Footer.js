@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import logo from '../images/UXSocietyLogo_full.png'
+import twitter from '../images/twit.svg'
+import medium from '../images/medium.svg'
+import fb from '../images/fb.svg'
 
 const Footer = styled.footer`
   padding-left: 168px;
@@ -27,6 +30,13 @@ const SubNav = styled.div`
 
 const SubFooter = styled.footer`
   color: #97a2ad;
+  p {
+    margin-right: auto;
+  }
+  img:not(:last-child) {
+    margin-right: 24px;
+  }
+  display: flex;
 `
 
 export default () => (
@@ -68,6 +78,11 @@ export default () => (
     </Nav>
     <SubFooter>
       <p>Passionately made by User Experience Society</p>
+      <nav>
+        <img src={fb} alt="" />
+        <img src={twitter} alt="" />
+        <img src={medium} alt="" />
+      </nav>
     </SubFooter>
   </Footer>
 )

@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../Header/Nav'
+import Header from '../../../styles/Nav'
 import Cta from './Cta'
 import styled from 'styled-components'
 import image_hero from '../../../images/image_hero.png'

@@ -11,6 +11,10 @@ const NavBar = styled.nav`
   a:first-child {
     margin-right: auto;
   }
+
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
 `
 
 const TextLink = styled(Link)`

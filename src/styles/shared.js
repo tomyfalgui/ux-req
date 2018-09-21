@@ -21,6 +21,10 @@ export const Btn = styled.button`
   font-size: 1rem;
   transition: all 0.2s;
 
+  @media screen and (max-width: 1000px) {
+    margin-top: 2rem;
+  }
+
   &:hover {
     transform: translateY(-1px);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);

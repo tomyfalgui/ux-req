@@ -40,9 +40,8 @@ const Image = styled.img`
   z-index: 500;
 
   @media screen and (max-width: 1000px) {
-    right: -20%;
     width: 80%;
-    opacity: 0.6;
+    opacity: 0.5;
   }
 `
 

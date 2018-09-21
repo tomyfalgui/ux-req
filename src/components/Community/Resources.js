@@ -11,6 +11,10 @@ const RWrap = styled.div`
   flex-direction: column;
   align-items: center;
   padding-bottom: 72px;
+
+  @media screen and (max-width: 1000px) {
+    padding-bottom: 36px;
+  }
 `
 
 const Sub = styled.h2`
@@ -74,9 +78,13 @@ const Tab = styled.h3`
 `
 
 const Container = styled.div`
-  margin-top: 24px;
+  margin-top: 48px;
   left: -120px;
   position: relative;
+
+  @media screen and (max-width: 1000px) {
+    left: 0;
+  }
 `
 
 const Bottom = styled.h3`
@@ -84,11 +92,14 @@ const Bottom = styled.h3`
   font-variant-caps: small-caps;
   font-weight: bold;
   margin-top: 36px;
+  @media screen and (max-width: 1000px) {
+    margin-top: 6rem;
+  }
 `
 
 const DivBoi = styled.div`
   width: 450px;
-  height: 350px;
+  min-height: 350px;
   background-color: white;
   position: absolute;
   right: -300px;
@@ -99,6 +110,13 @@ const DivBoi = styled.div`
   padding-right: 40px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    top: 200px;
+  }
 `
 
 const Circle = styled.span`

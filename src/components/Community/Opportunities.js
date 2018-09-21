@@ -11,6 +11,7 @@ const OWrapper = styled.div`
   align-items: center;
   min-height: 100vh;
   padding-bottom: 72px;
+  overflow: hidden;
 `
 
 const Sub = styled.h2`
@@ -20,6 +21,10 @@ const Sub = styled.h2`
   max-width: 650px;
   text-align: center;
   margin-bottom: 32px;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 2rem;
+  }
 `
 
 const Subs = styled.h2`
@@ -36,6 +41,14 @@ const CardWrapper = styled.div`
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.1);
   padding-top: 48px;
   margin-right: 48px;
+
+  @media screen and (max-width: 1000px) {
+    padding-top: 24px;
+    margin-right: 0;
+    margin-bottom: 24px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
 `
 
 //C0EAFF
@@ -48,6 +61,10 @@ const WrappingGame = styled.div`
   padding-right: 72px;
   margin-bottom: 48px;
   margin-top: 36px;
+
+  @media screen and (max-width: 1000px) {
+    margin: 0;
+  }
 `
 
 const Job = styled.span`
@@ -93,6 +110,10 @@ const Bottom = styled.div`
   font-variant: small-caps;
   font-weight: bold;
   color: #008ed4;
+
+  @media screen and (max-width: 1000px) {
+    height: 12%;
+  }
 `
 
 const InnerCard = styled.div`
@@ -122,11 +143,17 @@ const Card = () => (
     </Bottom>
   </CardWrapper>
 )
+
+const Img = styled.img`
+  @media screen and (max-width: 1000px) {
+    margin-bottom: 32px;
+  }
+`
 export default () => (
   <OWrapper>
     <Headline>opportunities</Headline>
     <Sub>Discover your passion through our curated list of job openings</Sub>
-    <img src={bottom} alt="" />
+    <Img src={bottom} alt="" />
     <WrappingGame>
       <Card />
       <Card />

@@ -7,7 +7,11 @@ const Contact = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  margin-bottom: 4rem;
+
+  @media screen and (max-width: 1000px) {
+    padding-top: 2rem;
+  }
 `
 
 const Sub = styled.h2`
@@ -18,6 +22,11 @@ const Sub = styled.h2`
     css`
       margin-top: 24px;
     `};
+
+  @media screen and (max-width: 1000px) {
+    font-size: 1.4rem;
+    text-align: center;
+  }
 `
 
 const Form = styled.form`

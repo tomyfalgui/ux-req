@@ -11,11 +11,19 @@ const EventWrapper = styled.div`
   align-items: center;
   min-height: 100vh;
   padding-bottom: 72px;
+
+  @media screen and (max-width: 1000px) {
+    padding-top: 3rem;
+  }
 `
 const Sub = styled.h2`
   font-size: 2.5rem;
   font-weight: bold;
   margin-top: 1rem;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 2rem;
+  }
 `
 
 const Tabs = styled.div`
@@ -69,12 +77,16 @@ const Tab = styled.h3`
 `
 
 const Left = styled.div`
-  padding: 48px 24px 36px 36px;
-  height: 480px;
+  padding: 24px 24px 36px 36px;
+  min-height: 480px;
   width: 450px;
   background-color: white;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+  }
 
   h2 {
     color: #b3bcc4;
@@ -120,6 +132,16 @@ const Left = styled.div`
 const Main = styled.div`
   margin-top: 64px;
   display: flex;
+  @media screen and (max-width: 1000px) {
+    flex-direction: column-reverse;
+  }
+`
+
+const Img = styled.img`
+  @media screen and (max-width: 1000px) {
+    width: 80%;
+    margin: 0 auto;
+  }
 `
 export default class Events extends React.Component {
   state = {
@@ -175,7 +197,7 @@ export default class Events extends React.Component {
             </p>
             <h5>register now</h5>
           </Left>
-          <img src={speaker} alt="" />
+          <Img src={speaker} alt="" />
         </Main>
       </EventWrapper>
     )

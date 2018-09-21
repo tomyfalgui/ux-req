@@ -9,7 +9,11 @@ const StoriesWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
+
+  @media screen and (max-width: 1000px) {
+    margin-bottom: 40px;
+  }
 `
 
 const Sub = styled.h2`
@@ -18,6 +22,10 @@ const Sub = styled.h2`
   margin-top: 1rem;
   max-width: 650px;
   text-align: center;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 2rem;
+  }
 `
 
 const Sub2 = styled.h2`
@@ -35,7 +43,7 @@ const ImageWrapper = styled.div`
 
 const DivBoi = styled.div`
   width: 400px;
-  height: 300px;
+  min-height: 300px;
   background-color: white;
   position: absolute;
   right: -100px;
@@ -46,6 +54,15 @@ const DivBoi = styled.div`
   padding-right: 40px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 2rem;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    top: 200px;
+    padding-left: 60px;
+  }
 `
 
 const Circle = styled.span`
@@ -72,6 +89,10 @@ const Arrow = styled.span`
   font-weight: bold;
   align-self: flex-end;
   margin-top: 36px;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 1rem;
+  }
 `
 
 export default () => (

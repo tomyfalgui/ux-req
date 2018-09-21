@@ -9,22 +9,41 @@ const Footer = styled.footer`
   padding-left: 168px;
   padding-right: 168px;
   padding-bottom: 100px;
+
+  @media screen and (max-width: 1000px) {
+    padding: 1rem;
+  }
 `
 
 const Nav = styled.nav`
   display: flex;
   align-items: flex-start;
   margin-bottom: 100px;
+
+  @media screen and (max-width: 1000px) {
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
 `
 
 const Image = styled.img`
   margin-right: auto;
+
+  @media screen and (max-width: 1000px) {
+    align-self: center;
+    margin-left: auto;
+    margin-bottom: 1rem;
+  }
 `
 
 const SubNav = styled.div`
   margin-right: ${props => (props.margin === 'no' ? 0 : '112px')};
   h3 {
     font-weight: bold;
+  }
+
+  @media screen and (max-width: 1000px) {
+    margin-bottom: 16px;
   }
 `
 
@@ -37,6 +56,16 @@ const SubFooter = styled.footer`
     margin-right: 24px;
   }
   display: flex;
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    nav {
+      display: flex;
+      justify-content: center;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+  }
 `
 
 export default () => (

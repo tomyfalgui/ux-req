@@ -13,16 +13,17 @@ const Contact = styled.div`
 const Sub = styled.h2`
   font-weight: 700;
   font-size: 2rem;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 1rem;
+    text-align: center;
+  }
+
   ${props =>
     props.hey === 'yes' &&
     css`
       margin-top: 24px;
     `};
-
-  @media screen and (max-width: 1000px) {
-    font-size: 1.5rem;
-    text-align: center;
-  }
 `
 
 const Form = styled.form`

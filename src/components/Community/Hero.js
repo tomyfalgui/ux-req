@@ -10,7 +10,7 @@ const HeroWrapper = styled.div`
   padding-top: 72px;
   padding-left: 168px;
   padding-right: 168px;
-  min-height: 110vh;
+  margin-bottom: 4rem;
 
   @media screen and (max-width: 1000px) {
     padding-left: 1rem;
@@ -25,6 +25,10 @@ const SubHeader = styled.h1`
   text-align: center;
   margin-top: 1.5rem;
   margin-bottom: -1.5rem;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 2rem;
+  }
 `
 
 const Flex = styled.div`

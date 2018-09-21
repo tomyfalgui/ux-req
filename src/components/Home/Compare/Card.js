@@ -12,12 +12,20 @@ const CardWrapper = styled.div`
   width: 40%;
   border-radius: 8px;
   padding-bottom: 64px;
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 `
 
 const Sub = styled.h2`
   font-weight: 700;
   font-size: 2rem;
   margin-bottom: 1rem;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 1.5rem;
+  }
 `
 
 const Paragraph = styled.p`

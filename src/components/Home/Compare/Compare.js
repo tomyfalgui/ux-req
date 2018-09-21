@@ -4,7 +4,7 @@ import Card from './Card'
 
 const Compare = styled.div`
   background-color: #eef1f6;
-  height: 120vh;
+  min-height: 120vh;
   z-index: 100;
   position: relative;
   display: flex;
@@ -13,6 +13,13 @@ const Compare = styled.div`
   padding-left: 168px;
   padding-right: 168px;
   padding-top: 72px;
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: stretch;
+  }
 `
 
 export default () => (

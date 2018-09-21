@@ -18,6 +18,11 @@ const Sub = styled.h2`
     css`
       margin-top: 24px;
     `};
+
+  @media screen and (max-width: 1000px) {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 `
 
 const Form = styled.form`

@@ -18,16 +18,29 @@ const CaptureParagraph = styled.p`
   text-align: center;
   line-height: 1.65;
   font-size: 1.3rem;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 1.3rem;
+    max-width: 450px;
+  }
 `
 const Image1 = styled.img`
   position: absolute;
   top: -6rem;
   right: 0;
+  @media screen and (max-width: 1000px) {
+    width: 40%;
+    top: -4rem;
+  }
 `
 const Image2 = styled.img`
   position: absolute;
   bottom: -4rem;
   left: 0;
+  @media screen and (max-width: 1000px) {
+    width: 50%;
+    bottom: -4rem;
+  }
 `
 
 export default () => (

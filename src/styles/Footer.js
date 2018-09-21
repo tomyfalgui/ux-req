@@ -21,8 +21,9 @@ const Nav = styled.nav`
   margin-bottom: 100px;
 
   @media screen and (max-width: 1000px) {
-    flex-wrap: wrap;
     margin-bottom: 16px;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 `
 
@@ -31,8 +32,9 @@ const Image = styled.img`
 
   @media screen and (max-width: 1000px) {
     align-self: center;
-    margin-left: auto;
+    margin-right: 0;
     margin-bottom: 1rem;
+    text-align: center;
   }
 `
 
@@ -44,6 +46,7 @@ const SubNav = styled.div`
 
   @media screen and (max-width: 1000px) {
     margin-bottom: 16px;
+    margin-right: 0;
   }
 `
 

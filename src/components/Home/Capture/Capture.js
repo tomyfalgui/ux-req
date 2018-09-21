@@ -10,6 +10,10 @@ const Capture = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+
+  @media screen and (max-width: 1000px) {
+    height: 65vh;
+  }
 `
 
 const CaptureParagraph = styled.p`
